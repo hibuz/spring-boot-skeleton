@@ -18,5 +18,22 @@ dependencies {
 }
 ```
 
+## Building for production
+
+### Packaging as jar
+
+To build the final jar and optimize the example application for production, run:
+
+```
+./gradlew clean bootJar
+```
+
+To ensure everything worked, run:
+
+```
+java -jar build/libs/*.jar
+```
+
+
 ## References
 - [GitCommitEmoji.md](https://gist.github.com/parmentf/035de27d6ed1dce0b36a)
