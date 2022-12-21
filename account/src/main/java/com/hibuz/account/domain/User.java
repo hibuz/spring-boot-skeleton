@@ -28,7 +28,8 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 @Entity
 @Table(name = "users")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class Account extends BaseEntity<Long> {
+public class User extends BaseEntity<Long> {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -59,7 +60,7 @@ public class Account extends BaseEntity<Long> {
     private boolean activated = false;
 
     @Builder
-    public Account(String login, String password, String name, String email, boolean activated) {
+    public User(String login, String password, String name, String email, boolean activated) {
         this.login = login;
         this.password = password;
         this.name = name;
