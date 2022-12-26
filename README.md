@@ -2,7 +2,7 @@
 
 ## Step 1. Create Initial Project
 ![spring-initializr](.github/spring.svg)
-> [Project URL](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.0.0&packaging=jar&jvmVersion=17&groupId=com.hibuz&artifactId=account&name=spring-boot-skeleton&description=Demo%20project%20for%20Spring%20Boot&packageName=com.hibuz.account&dependencies=native,lombok,devtools,web,security,data-jpa,h2,validation)
+> [Project URL](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.0.1&packaging=jar&jvmVersion=17&groupId=com.hibuz&artifactId=account&name=spring-boot-skeleton&description=Demo%20project%20for%20Spring%20Boot&packageName=com.hibuz.account&dependencies=native,lombok,devtools,web,security,data-jpa,h2,validation,restdocs)
 
 ```groovy
 dependencies {
@@ -15,6 +15,7 @@ dependencies {
   runtimeOnly 'com.h2database:h2'
   annotationProcessor 'org.projectlombok:lombok'
   testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
   testImplementation 'org.springframework.security:spring-security-test'
 }
 ```
