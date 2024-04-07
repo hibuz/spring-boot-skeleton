@@ -37,7 +37,9 @@ To ensure everything worked, run:
 java -jar build/libs/*.jar
 ```
 
-Then navigate to http://localhost:8080/h2-console in your browser.
+Then navigate to followings below in your browser.
+- http://localhost:8080/h2-console
+- http://localhost:8080/swagger-ui/index.html
 
 
 ## References
