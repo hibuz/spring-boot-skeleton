@@ -2,6 +2,8 @@ spring:
   datasource:
     url: jdbc:log4jdbc:h2:mem:test
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    username: sa # log4jdbc 사용시 h2-console 로그인을 위해 username, password 설정필요
+    password:
   jpa:
     show-sql: true
     properties:
