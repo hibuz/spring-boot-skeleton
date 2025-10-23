@@ -23,6 +23,15 @@ dependencies {
 }
 ```
 
+## Prerequisites
+```sh
+# Run Elasticsearch Docker Container
+docker run --rm -it -e "discovery.type=single-node" -p 9200:9200 docker.elastic.co/elasticsearch/elasticsearch:7.17.28
+
+# Test Elasticsearch is running
+curl http://localhost:9200
+```
+
 ## Building for production
 
 ### Packaging as jar
