@@ -2,7 +2,7 @@
 
 ## Step 1. Create Initial Project
 ![spring-initializr](.github/spring.svg)
-> [Project URL](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.5.6&packaging=jar&jvmVersion=21&groupId=com.hibuz&artifactId=account&name=spring-boot-skeleton&description=Demo%20project%20for%20Spring%20Boot&packageName=com.hibuz.account&dependencies=native,lombok,actuator,devtools,web,security,data-jpa,h2,validation,restdocs,data-elasticsearch)
+> [Project URL](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.5.7&packaging=jar&jvmVersion=21&groupId=com.hibuz&artifactId=account&name=spring-boot-skeleton&description=Demo%20project%20for%20Spring%20Boot&packageName=com.hibuz.account&dependencies=native,lombok,actuator,devtools,web,security,data-jpa,h2,validation,restdocs,data-elasticsearch)
 
 ```groovy
 dependencies {
@@ -45,7 +45,7 @@ To build the final jar and optimize the example application for production, run:
 To ensure everything worked, run:
 
 ```
-java -jar build/libs/*.jar
+java -jar build/libs/*.jar  -javaagent:../.github/aspectjweaver-1.9.9.1.jar
 ```
 
 Then navigate to followings below in your browser.
