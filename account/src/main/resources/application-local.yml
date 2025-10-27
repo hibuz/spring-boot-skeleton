@@ -15,5 +15,4 @@ spring:
     console.enabled: true
  
   elasticsearch:
-    uris:
-    - http://localhost:9200
+    uris: http://localhost:9200

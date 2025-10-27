@@ -1,6 +1,6 @@
 package com.hibuz.account.application;
 
-import com.hibuz.account.dao.AuthorityRepository;
+import com.hibuz.account.dao.jpa.AuthorityRepository;
 import com.hibuz.account.domain.Authority;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

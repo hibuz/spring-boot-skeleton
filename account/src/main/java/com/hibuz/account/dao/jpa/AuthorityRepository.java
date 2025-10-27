@@ -1,4 +1,4 @@
-package com.hibuz.account.dao;
+package com.hibuz.account.dao.jpa;
 
 import com.hibuz.account.domain.Authority;
 import org.springframework.data.jpa.repository.JpaRepository;
